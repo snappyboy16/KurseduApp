@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">KurseduApp</string>
-    <string name="hello_world_text">Hello VovA!</string>
+    <string name="logo">Logo</string>
+    <string name="logo_main">Logo</string>
 </resources>
