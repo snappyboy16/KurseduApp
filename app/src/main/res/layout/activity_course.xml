@@ -18,4 +18,84 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/CourseTitleTextView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp">
+
+        <Spinner
+            android:id="@+id/ProfessionSpinner"
+            android:layout_width="181dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:dropDownWidth="181dp"
+            android:spinnerMode="dialog"
+            android:gravity="center"
+            android:hint="@string/hint_profession_spinner" />
+
+        <Spinner
+            android:id="@+id/CourseSpinner"
+            android:layout_width="181dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:dropDownWidth="181dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Spinner
+            android:id="@+id/FormatSpinner"
+            android:layout_width="181dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:spinnerMode="dialog"
+            android:layout_weight="1"
+            android:dropDownWidth="181dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Spinner
+            android:id="@+id/PlatformSpinner"
+            android:layout_width="181dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:dropDownWidth="181dp"
+            android:spinnerMode="dropdown"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_menu"
+        tools:ignore="MissingConstraints"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:itemIconSize="20dp" >
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 </androidx.constraintlayout.widget.ConstraintLayout>

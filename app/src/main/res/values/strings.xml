@@ -6,4 +6,14 @@
     <string name="googlesignin">Авторизация через Google</string>
     <string name="text_auth_title">Авторизация/Регистрация</string>
     <string name="text_course_title">Курсы</string>
+    <string name="hint_profession_spinner">Профессия</string>
+    <string name="text_smile">📮</string>
+    <string name="text_profile_title">Профиль</string>
+    <string name="text_mail_profile">TextView</string>
+    <string name="text_button_profile">🚪 Выход</string>
+    <string name="text_course_menu">Курсы</string>
+    <string name="text_add_menu">Добавить</string>
+    <string name="text_profile_menu">Профиль</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
